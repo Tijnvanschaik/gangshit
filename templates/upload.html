@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Invoice</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="css1">
+        <h1>Upload Invoice</h1>
+        <form method="post" enctype="multipart/form-data">
+            <div class="input-box">
+                <input type="text" id="company_name" name="company_name" placeholder="Company Name" required>
+            </div>
+            <div class="input-box">
+                <input type="text" id="paid_notpaid" name="paid_notpaid" placeholder="Is the invoice paid? (Y/N)" required>
+            </div>
+            <div class="input-box">
+                <input type="file" id="file" name="file" class="file-input" required>
+                <label for="file" class="file-label">Choose File</label>
+            </div>
+            <button type="submit" class="button">Upload</button>
+        </form>
+            <a style="margin: 30px 0;"        href="{{ url_for('start') }}" class="button link-button">Home</a>
+    </div>
+    <script>
+        document.querySelector('.file-label').addEventListener('click', function() {
+            document.querySelector('.file-input').click();
+        });
+    </script>
+</body>
+</html>

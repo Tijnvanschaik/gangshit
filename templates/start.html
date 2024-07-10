@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Screen</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="css1">
+        <h1>Welcome to tesseract</h1>
+        <form style="padding: 6px;" action="{{ url_for('logout') }}" method="post">
+            <button type="submit" class="button">Logout</button>
+        </form>
+        <form style="padding: 6px;" action="{{ url_for('upload_invoice') }}" method="get">
+            <button type="submit" class="button">Upload Invoice</button>
+        </form>
+        <form style="padding: 6px;" action="{{ url_for('view_csv') }}" method="get">
+            <button type="submit" class="button">View CSV</button>
+        </form>
+    </div>
+</body>
+</html>

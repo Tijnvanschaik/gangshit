@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://cdn.dribbble.com/users/470545/screenshots/3249842/sunset-on-a-beach.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.css1, .css2 {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #E9EAEA;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.css2 {
+    width: 480px;
+}
+
+.css1 h1, .css2 h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.css1 .input-box, .css2 .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #E9EAEA;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #E9EAEA;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.button, .link-button {
+    width: 100%;
+    height: 45px;
+    background: #E9EAEA;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    width: 100%;
+    height: 45px;
+    background: #E9EAEA;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 300px; /* Adjust the width as needed */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #E9EAEA;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+td {
+    background-color: rgba(0, 0, 0, .5);
+    color: #E9EAEA;
+}
